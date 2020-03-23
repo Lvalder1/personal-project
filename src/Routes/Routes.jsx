@@ -12,7 +12,7 @@ export default class Routes extends Component {
         return (
             <Router>
                 <NotFound default />
-                <CardList path="cards" />
+                <Cardlist path="cardlist" />
                 <Frontpage path="frontpage" />
             </Router>
         );
