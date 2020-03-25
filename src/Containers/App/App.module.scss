@@ -1,1 +1,9 @@
-
+.app {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    
+    @media screen and (max-width:768px) {
+      flex-direction: column;
+    }
+  }

@@ -8,7 +8,7 @@ export default class Header extends Component {
   render () {
     return (
       <main className={styles.header}>
-           <h1>Louis's Beers</h1>
+      <h1>{this.props.text}</h1>
       </main>
     )
   }

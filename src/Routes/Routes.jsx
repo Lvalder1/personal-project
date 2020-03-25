@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Router, Redirect, globalHistory } from "@reach/router";
-import Cardlist from "../Components/Cardlist";
-import Frontpage from "../Components/Frontpage";
-
+import { Router, Redirect } from "@reach/router";
+import Beerinfo from "../Components/Main/Beerinfo";
+import Frontpage from "../Components/Main/Frontpage";
 
 
 const NotFound = () => (<h2>Not Found</h2>);
@@ -11,9 +10,10 @@ export default class Routes extends Component {
     render() {
         return (
             <Router>
-                <NotFound default />
-                <Cardlist path="cardlist" />
+                <Redirect noThrow from="/" to="/frontpage" />
+                <Beerinfo path="beerinfo" />
                 <Frontpage path="frontpage" />
+                <NotFound default />
             </Router>
         );
     }

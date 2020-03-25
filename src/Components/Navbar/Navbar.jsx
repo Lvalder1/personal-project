@@ -5,7 +5,7 @@ import Navitem from "./Navitem";
 
 const navItems = {
     Home: "frontpage",
-    Beers: "cardlist",
+    Beers: "beerinfo",
     
 };
 
