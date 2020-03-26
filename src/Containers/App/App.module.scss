@@ -1,7 +1,15 @@
+@import "../../variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .app {
     display: flex;
     height: 100vh;
     flex-direction: row;
+    width: 100%;
     
     @media screen and (max-width:768px) {
       flex-direction: column;

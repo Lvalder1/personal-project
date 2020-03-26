@@ -1,4 +1,5 @@
+@import "../../../variables";
+
 .beerinfo {
-    border: red 2px solid;
-    background-color: grey;
+    background-color: $background-color;
 }

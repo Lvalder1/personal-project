@@ -1,0 +1,10 @@
+@import "../../variables";
+
+.header {
+    background-color: $background-color;
+    font-family: Montserrat-Regular; 
+    color: $text-color;
+    font-weight: bolder;
+    text-align: left;
+    font-size: 28px;
+}

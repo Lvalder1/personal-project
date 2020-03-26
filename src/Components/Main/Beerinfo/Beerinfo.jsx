@@ -1,6 +1,5 @@
 import React, { Component } from  'react';
 import styles from "./Beerinfo.module.scss";
-import { firestore } from "../../../firebase";
 import Beerslist from '../Beerslist/Beerslist';
 import Header from "../../Header";
 
@@ -26,10 +25,12 @@ componentDidMount() {
   render () {
     console.log(this.state);
     return (
-      <section className={styles.beerinfo}>
-           <Header text={"Here Are Some Different Beers"} />
-           <Beerslist beers={this.state.beers} />
-      </section>
+      <>
+        <Header text={"Choose Your Favorite Beer!"} />
+        <section className={styles.beerinfo}>
+            <Beerslist beers={this.state.beers} />
+        </section>
+      </>
     )
   }
 
