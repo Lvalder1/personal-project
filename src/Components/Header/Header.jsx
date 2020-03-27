@@ -1,6 +1,5 @@
 import React, { Component } from  'react';
 import styles from "./Header.module.scss";
-import Navbar from '../Navbar';
 
 
 

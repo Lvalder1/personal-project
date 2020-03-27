@@ -13,6 +13,10 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
+export const providers = {
+  google: new firebase.auth.GoogleAuthProvider()
+}
+
 export const firestore = firebase.firestore();
 
 export default firebase;
