@@ -13,15 +13,17 @@ export default class Beers extends Component {
 
   render () {
     const beersData = this.props.beersData
+    const handleClick = this.props.handleClick
+    console.log(this.props.handleClick)
     return (
-    <section className={styles.beers}>
+    <section className={styles.beers} onClick={handleClick}>
         <p>Name: {beersData.name}</p>
         <p>{this.description}</p> 
-        <div className={styles.img}>
-            <img src={beersData.image_url}></img>
+        <div style={styles.img}>
+            <img src={beersData.image_url} alt="A Brewdog Beer"></img>
         </div>
     </section>
-    )
+    ) 
   }
 
 }

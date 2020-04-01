@@ -4,8 +4,9 @@ import Navitem from "./Navitem";
 
 
 const navItems = {
-    Home: "frontpage",
-    Beers: "beerinfo",
+    Home: "login",
+    Beers: "private/beerinfo",
+    YourBar: "private/mybeers",
     
 };
 
