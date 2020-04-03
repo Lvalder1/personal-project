@@ -42,7 +42,6 @@ componentDidMount() {
 }
 
   render () {
-    // console.log(this.state);
     return (
       <>
         <Header text={"Choose Your Favorite Beer!"} />

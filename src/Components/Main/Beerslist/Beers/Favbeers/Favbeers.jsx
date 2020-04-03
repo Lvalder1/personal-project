@@ -1,17 +1,17 @@
 import React, { Component } from  'react';
-import styles from "./Beers.module.scss";
-import { firestore } from "../../../../firebase";
+import styles from "./Favbeers.module.scss";
+import { firestore } from "../../../../../firebase";
 
-export default class Beers extends Component {
+export default class Favbeers extends Component {
 
   handleClick = (event) => {
     event.preventDefault();
     firestore
       .collection("favorite beer")
-      .add(this.props.beersData)
+      .delete(this.props.beersData)
       .then(() => {
           console.log("click")
-          alert("This beer has been saved!");
+          alert("This beer has been removed!");
           // change something on the page to tell the user it's worked
           // make the button not clickable!
       })
