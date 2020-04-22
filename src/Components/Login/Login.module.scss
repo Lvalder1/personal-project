@@ -3,5 +3,18 @@
 .google {
     text-align: center;
     background-color: $background-color;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+
+button {
+    background-color: blue;
+    font-size: 20px;
+}
+
+.login {
+    background-color: $background-color;
     height: 100vh;
 }

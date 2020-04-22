@@ -25,6 +25,9 @@ export default class Routes extends Component {
             .catch(error => {
                 console.log(error);
             })
+            .then(() => {
+                globalHistory.navigate("/private/beerinfo");
+            })
     }
 
     signOut = () => {

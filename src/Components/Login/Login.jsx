@@ -7,9 +7,10 @@ export default class Login extends Component {
         return (
             <section>
                 <Header text={"Sign In With Your Google Account "} />
-                <div onClick={this.props.signIn} className={styles.google}>
-                    <button>Sign in with google</button>
+                <div className={styles.google}>
+                    <button onClick={this.props.signIn}>Sign in with google</button>
                 </div>
+                <div className={styles.login}></div>
             </section>
         );
     }

@@ -12,8 +12,6 @@ export default class Favbeers extends Component {
       .then(() => {
           console.log("click")
           alert("This beer has been removed!");
-          // change something on the page to tell the user it's worked
-          // make the button not clickable!
       })
   }
 
