@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "punk-beers"
+    "default": "punk-beers",
+    "louis": "punk-beers-1"
   }
 }
